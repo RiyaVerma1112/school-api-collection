@@ -19,7 +19,7 @@ app.get('/test' , (req , res) => {
 })
 
 // port 
-const PORT = process.env || 8000 ;
+const PORT = process.env.PORT || 8000 ;
 
 // conditionally listen
 mySqlPool.query('SELECT 1').then(() => {
